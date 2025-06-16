@@ -12,6 +12,6 @@ app.use(express.json());
 createTables();
 app.use('/api/gastos', gastosRoutes);
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
